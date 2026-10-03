@@ -1,17 +1,281 @@
+```html
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 2
+      <ion-icon name="list-circle-outline"></ion-icon>
+      Jadwal Kuliah
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-accordion-group>
+
+    <!-- SENIN -->
+    <ion-accordion value="senin">
+      <ion-item slot="header" color="light">
+        <ion-icon name="calendar-outline" slot="start" color="primary"></ion-icon>
+        <ion-label>
+          <h2><b>Senin</b></h2>
+          <p>3 mata kuliah</p>
+        </ion-label>
+      </ion-item>
+
+      <div slot="content" class="ion-padding">
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Pendidikan Agama Islam</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>
+              <ion-icon name="time-outline" color="primary"></ion-icon>
+              <b> 09.00 - 10.40</b>
+            </p>
+            <p>
+              <ion-icon name="person-outline" color="primary"></ion-icon>
+              Agus Kurniawan S.T., M.T., Ph.D.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Pancasila</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>
+              <ion-icon name="time-outline" color="primary"></ion-icon>
+              <b> 11.10 - 12.50</b>
+            </p>
+            <p>
+              <ion-icon name="person-outline" color="primary"></ion-icon>
+              Sri Yulita Pramulia Panani, S.Fil., M.Phil.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Pendidikan Kewarganegaraan</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>
+              <ion-icon name="time-outline" color="primary"></ion-icon>
+              <b> 13.00 - 14.40</b>
+            </p>
+            <p>
+              <ion-icon name="person-outline" color="primary"></ion-icon>
+              Dr. Drs. Mustofa Anshori Lidinillah, M.Hum.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-accordion>
+
+
+    <!-- SELASA -->
+    <ion-accordion value="selasa">
+      <ion-item slot="header" color="light">
+        <ion-icon name="calendar-outline" slot="start" color="primary"></ion-icon>
+        <ion-label>
+          <h2><b>Selasa</b></h2>
+          <p>1 mata kuliah</p>
+        </ion-label>
+      </ion-item>
+
+      <div slot="content" class="ion-padding">
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              Praktikum Pemrograman Geospasial:
+              Perangkat Bergerak Lanjut
+            </ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p>
+              <ion-icon name="time-outline" color="primary"></ion-icon>
+              <b> 11.00 - 13.00</b>
+            </p>
+
+            <p>
+              <ion-icon name="person-outline" color="primary"></ion-icon>
+              Raden Muhammad Anshori, S.Si., M.Sc.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-accordion>
+
+
+    <!-- RABU -->
+    <ion-accordion value="rabu">
+      <ion-item slot="header" color="light">
+        <ion-icon name="calendar-outline" slot="start" color="primary"></ion-icon>
+        <ion-label>
+          <h2><b>Rabu</b></h2>
+          <p>2 mata kuliah</p>
+        </ion-label>
+      </ion-item>
+
+      <div slot="content" class="ion-padding">
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Ide Kreatif dan Kewirausahaan</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p>
+              <ion-icon name="time-outline" color="primary"></ion-icon>
+              <b> 11.10 - 12.50</b>
+            </p>
+
+            <p>
+              <ion-icon name="person-outline" color="primary"></ion-icon>
+              Dr. Barandi Sapta Widartono, S.Si., M.Si., M.Sc.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              Praktikum Sains Data Geospasial Lanjut
+            </ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p>
+              <ion-icon name="time-outline" color="primary"></ion-icon>
+              <b> 13.00 - 16.00</b>
+            </p>
+
+            <p>
+              <ion-icon name="person-outline" color="primary"></ion-icon>
+              Ade Febri Sandhini Putri, S.Si., M.Sc.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-accordion>
+
+
+    <!-- KAMIS -->
+    <ion-accordion value="kamis">
+      <ion-item slot="header" color="light">
+        <ion-icon name="calendar-outline" slot="start" color="primary"></ion-icon>
+        <ion-label>
+          <h2><b>Kamis</b></h2>
+          <p>2 mata kuliah</p>
+        </ion-label>
+      </ion-item>
+
+      <div slot="content" class="ion-padding">
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Metodologi Penelitian</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p>
+              <ion-icon name="time-outline" color="primary"></ion-icon>
+              <b> 11.10 - 12.50</b>
+            </p>
+
+            <p>
+              <ion-icon name="person-outline" color="primary"></ion-icon>
+              Dr. Like Indrawati, S.Si., M.Sc.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              Praktikum Aplikasi SIG Untuk Pemetaan
+              Pesisir dan Kelautan
+            </ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p>
+              <ion-icon name="time-outline" color="primary"></ion-icon>
+              <b> 13.00 - 15.00</b>
+            </p>
+
+            <p>
+              <ion-icon name="person-outline" color="primary"></ion-icon>
+              Dr. Like Indrawati, S.Si., M.Sc.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-accordion>
+
+
+    <!-- JUMAT -->
+    <ion-accordion value="jumat">
+      <ion-item slot="header" color="light">
+        <ion-icon name="calendar-outline" slot="start" color="primary"></ion-icon>
+        <ion-label>
+          <h2><b>Jumat</b></h2>
+          <p>2 mata kuliah</p>
+        </ion-label>
+      </ion-item>
+
+      <div slot="content" class="ion-padding">
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Bahasa Indonesia</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p>
+              <ion-icon name="time-outline" color="primary"></ion-icon>
+              <b> 07.15 - 08.55</b>
+            </p>
+
+            <p>
+              <ion-icon name="person-outline" color="primary"></ion-icon>
+              Arum Rindu Sekar Kasih
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              Praktikum Aplikasi SIG Untuk Sumber Daya Air
+            </ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p>
+              <ion-icon name="time-outline" color="primary"></ion-icon>
+              <b> 13.00 - 15.00</b>
+            </p>
+
+            <p>
+              <ion-icon name="person-outline" color="primary"></ion-icon>
+              Dr. Like Indrawati, S.Si., M.Sc.
+            </p>
+          </ion-card-content>
+        </ion-card>
+
+      </div>
+    </ion-accordion>
+
+  </ion-accordion-group>
+
 </ion-content>
+```
